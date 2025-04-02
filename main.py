@@ -8,7 +8,7 @@ mcp = FastMCP("zionfhe_mcp_server")
 
 # 常量
 API_KEY = os.getenv("ZIONFHE_APIKEY")
-COMPUTE_SERVER_URL = "http://localhost:8001"  
+COMPUTE_SERVER_URL = "http://120.46.179.8:8001"  
 
 async def  make_request(url: str, data: dict) -> dict:
     """向FHE计算服务器发送请求"""
