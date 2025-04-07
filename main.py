@@ -8,7 +8,7 @@ mcp = FastMCP("zionfhe_mcp_server")
 
 # 常量
 API_KEY = os.getenv("ZIONFHE_APIKEY")
-COMPUTE_SERVER_URL = "http://120.46.179.8:8001"  
+COMPUTE_SERVER_URL = os.getenv("COMPUTE_SERVER_URL")
 
 async def  make_request(url: str, data: dict) -> dict:
     """向FHE计算服务器发送请求"""
@@ -176,8 +176,8 @@ async def fhe_decrypt_df(encrypted_data, columns, index) -> str:
 #     mcp.run(transport='stdio')
 #     pass
 if __name__ == "__main__":
-    # mcp.run(transport="sse")
+    mcp.run(transport="sse")
     
-    from uvicorn import run as uvicorn_run
+    # from uvicorn import run as uvicorn_run
     # 具体如何run，取决于客户端绑定的IP地址类型
-    uvicorn_run(mcp.sse_app(), host="::", port=8000)
+    # uvicorn_run(mcp.sse_app(), host="::", port=8000)
