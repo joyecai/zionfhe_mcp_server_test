@@ -13,3 +13,5 @@ Zionfhe_mcp_server_test is a server implementation based on the new homomorphic 
 > The MCP Server will run on port 8000.
 6. Connect to the server in sse mode using the client.  
 [client_config](https://gitlab.com/phantaverse-tech/ai-product/zionfhe_mcp_server/-/blob/dev/mcp_server/client_config.png?ref_type=heads)
+
+[https://mcpreview.com/](https://mcpreview.com/mcp-servers/joyecai/zionfhe_mcp_server_test)
